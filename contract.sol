@@ -99,8 +99,6 @@ interface IERC20 {
     event Approval(address indexed owner, address indexed spender, uint256 value);
 }
 
-
-
 /**
  * @dev Wrappers over Solidity's arithmetic operations with added overflow
  * checks.
@@ -268,7 +266,6 @@ abstract contract Context {
         return msg.data;
     }
 }
-
 
 /**
  * @dev Collection of functions related to the address type
@@ -510,7 +507,6 @@ interface IUniswapV2Factory {
     function setFeeToSetter(address) external;
 }
 
-
 interface IUniswapV2Pair {
     event Approval(address indexed owner, address indexed spender, uint value);
     event Transfer(address indexed from, address indexed to, uint value);
@@ -696,7 +692,6 @@ interface IUniswapV2Router02 is IUniswapV2Router01 {
         uint deadline
     ) external;
 }
-
 
 contract LockedToken is Context, IERC20, Ownable {
     using SafeMath for uint256;
